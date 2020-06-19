@@ -3243,6 +3243,12 @@ xnnpack_cc_library(
 )
 
 xnnpack_cc_library(
+    name = "headers",
+    hdrs = glob(["*.h]),
+    visibility = xnnpack_visibility()
+)
+
+xnnpack_cc_library(
     name = "xnnpack_operators_nhwc_f32",
     srcs = [
         "src/init.c",
