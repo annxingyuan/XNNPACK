@@ -3244,7 +3244,7 @@ xnnpack_cc_library(
 
 xnnpack_cc_library(
     name = "headers",
-    hdrs = glob(["*.h]),
+    hdrs = glob(["*.h"]),
     visibility = xnnpack_visibility(),
 )
 
